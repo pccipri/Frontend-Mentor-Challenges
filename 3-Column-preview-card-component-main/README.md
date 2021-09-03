@@ -26,4 +26,4 @@ Users should be able to:
 
 ### Author
 
-- Frontend Mentor - [@pccipru](https://www.frontendmentor.io/profile/pccipru)
+- Frontend Mentor - [@pccipri](https://www.frontendmentor.io/profile/pccipru)
