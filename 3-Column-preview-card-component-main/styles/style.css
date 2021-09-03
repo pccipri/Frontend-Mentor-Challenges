@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+:root {
+    --backgroundHeadingsButtonsColor : hsl(0, 0%, 95%);
+    --paragraphsColor: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 1.2em;
+}
+
+#background {
+    display: flex;
+    height: 95%;
+    background-color: var(--backgroundHeadingsButtonsColor);
+    }
+
+#container {
+    margin: auto;
+    width: 55%;
+    height: 70%;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.item > * {
+    margin-left: 15%;
+}
+
+.item > h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--backgroundHeadingsButtonsColor);
+
+}
+
+.item > img {
+    margin-top: 20%;
+}
+
+.item > p {
+    color: var(--paragraphsColor);
+    margin-right: 25%;
+    word-spacing: 2px;
+    line-height: 25px;
+    font-size: .7em;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 18%;
+}
+
+.item > button {
+    width: 38%;
+    height: 8%;
+    border-radius: 25px;
+    border: 2px solid var(--backgroundHeadingsButtonsColor);
+    color: inherit;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.item > button:hover {
+    background-color: inherit;
+    cursor: pointer;
+    color: var(--backgroundHeadingsButtonsColor);
+}
+
+.item-Sedans {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
+
+}
+.item-Suvs {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+.item-Luxury {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
+
+}   
+
+footer {
+    height: 5%;
+    background-color: var(--backgroundHeadingsButtonsColor);
+}
+
+.attribution {
+     font-size: .8em;
+     text-align: center;
+    }
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+    }
+
+    @media only screen and (max-width: 475px) {
+        /* For other devices: */
+        html,
+        body {
+            height: fit-content;
+        }
+
+        #background {
+            display: flex;
+            height: fit-content;
+            background-color: var(--backgroundHeadingsButtonsColor);
+            }
+        
+        #container {
+            width: 90%;
+            height: 85%;
+            grid-auto-flow: row;
+        }
+        
+        .item {
+            gap: 25px;
+            height: fit-content;
+        }
+
+        .item > h1 {
+            font-size: 1.5em;
+        }
+
+        .item > img {
+            margin-top: 15%;
+        }
+
+        .item > p {
+            margin-bottom: 0;
+            margin-right: 10%;
+        }
+
+        .item > button {
+            height: 3em;
+            margin-bottom: 10%;
+        }
+
+        .item-Sedans {
+            background-color: hsl(31, 77%, 52%);
+            color: hsl(31, 77%, 52%);
+            border-radius: 15px 15px 0 0;
+        
+        }
+
+        .item-Suvs {
+            background-color: hsl(184, 100%, 22%);
+            color: hsl(184, 100%, 22%);
+        }
+        
+        .item-Luxury {
+            background-color: hsl(179, 100%, 13%);
+            color: hsl(179, 100%, 13%);
+            border-radius: 0 0 15px 15px;
+        
+        }
+        
+        footer {
+            height: fit-content;
+        }
+        .attribution {
+            font-size: .6em;
+           }
+      }
