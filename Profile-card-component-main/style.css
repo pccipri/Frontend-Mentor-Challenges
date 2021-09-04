@@ -18,7 +18,7 @@ body {
 
 #background {
     height: 97%;
-    background: url(/images/bg-pattern-top.svg) right 50vw bottom 40vh no-repeat, url(/images/bg-pattern-bottom.svg) 50vw 50vh no-repeat;
+    background: url(images/bg-pattern-top.svg) right 50vw bottom 40vh no-repeat, url(images/bg-pattern-bottom.svg) 50vw 50vh no-repeat;
     background-color: hsl(185, 75%, 39%);
     display: flex;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 #card-top {
-    background: url(/images/bg-pattern-card.svg);
+    background: url(images/bg-pattern-card.svg);
     border-radius: 14px 14px 0 0;
 }
 
@@ -47,7 +47,7 @@ body {
     bottom: 4em;
     border-radius: 50%;
     border: 5px solid white;
-    background: url(/images/image-victor.jpg);
+    background: url(images/image-victor.jpg);
     background-size: cover;
     background-position: center;
 }
