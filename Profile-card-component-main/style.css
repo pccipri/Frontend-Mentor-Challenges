@@ -26,8 +26,8 @@ body {
 #card-body {
     display: grid;
     margin: auto;
-    width: 20%;
-    height: 45%;
+    width: 25%;
+    height: 48%;
     background-color: white;
     border-radius: 14px;
     grid-auto-rows: 38% 0% 40% 22%;
@@ -42,8 +42,8 @@ body {
     justify-self: center;
     position: relative;
     z-index: 2;
-    width: calc(96px + 1.3vw);
-    height: calc(96px + 1.3vw);
+    width: calc(96px + 1.2vw);
+    height: calc(96px + 1.2vw);
     bottom: 4em;
     border-radius: 50%;
     border: 5px solid white;
@@ -107,14 +107,14 @@ body {
 .stats-container > p {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .stats-container > p > span {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
     color: hsl(227, 10%, 46%);
-    font-size: .7em;
+    font-size: .6em;
     letter-spacing: .2em;
 }
 
@@ -124,7 +124,7 @@ footer {
 
 .attribution {
       text-align: center;
-      font-size: 1.5em; 
+      font-size: 1.3em; 
     }
 
 .attribution a {
