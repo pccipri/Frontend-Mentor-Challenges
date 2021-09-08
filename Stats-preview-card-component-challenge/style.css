@@ -7,27 +7,27 @@
   box-sizing: border-box;
 }
 
+.upper-casetext {
+  text-transform: uppercase;
+}
+
 html {
   height: 100%
 }
 
 body {
-  font-size: 1vw;
+  font-size: 100%;
   height: 100%;
 }
 
-main {
-  height: 97%;
-}
-
-#main-background {
+.main-background {
   display: flex;
-  height: 100%;
+  height: 97%;
   background-color: hsl(233, 47%, 7%);
   flex-direction: column;
 }
 
-#card-body {
+.card-body {
   display: flex;
   margin: auto;
   height: 58%;
@@ -38,7 +38,7 @@ main {
   align-items: stretch;
 }
 
-#image-container {
+.image-container {
     width: 50%;
     height: 100%;
     position: relative;
@@ -47,7 +47,7 @@ main {
 
 }
 
-#overlay {
+.purple-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -55,7 +55,15 @@ main {
   mix-blend-mode: multiply;
 }
 
-#card-text {
+.opacity-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: .3;
+}
+
+.card-text {
   width: 50%;
   display: flex;
   flex-flow: column nowrap;
@@ -63,28 +71,29 @@ main {
   align-items: center;
 }
 
-#main-text {
+.main-text {
   height: 60%;
   width: 63%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  font-size: 1.2rem;
   gap: 8%;
 }
 
-#main-text > h1 {
+.main-text > h1 {
   color: hsl(0, 0%, 100%);
   font-family: 'Inter', sans-serif;
 }
 
-#main-text > p {
+.main-text > p {
   line-height: 1.8em;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca', sans-serif;
 }
 
-#stats {
+.stats-container {
   height: 40%;
   width: 100%;
   display: flex;
@@ -95,11 +104,13 @@ main {
 
 .stat > h2 {
   color: hsl(0, 0%, 100%);
-  margin-bottom: .4em;
+  margin-bottom: .3em;
+  font-size: 1.6rem;
 }
 
 .stat > p {
-    color: hsla(0, 0%, 100%, 0.6)
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.9rem;
 }
 
 footer {
@@ -109,7 +120,7 @@ footer {
 
 .attribution {
   color: white;
-  font-size: 1em;
+  font-size: 1.3rem;
   text-align: center; 
 }
 
@@ -119,14 +130,15 @@ footer {
 
 @media only screen and (max-width: 475px) {
   /* For other devices: */
-  #card-body {
-    height: 90%;
+
+  .card-body {
+    height: 95%;
     width: 80%;
     flex-flow: column-reverse nowrap;
     justify-content: space-between;
   }
   
-  #image-container {
+  .image-container {
       width: 100%;
       height: 30%;
       border-radius: 8px 8px 0 0;
@@ -135,11 +147,11 @@ footer {
   
   }
   
-  #overlay {
+  .overlay {
     border-radius: 8px 8px 0 0;
   }
   
-  #card-text {
+  .card-text {
     width: 100%;
     height: 70%;
     display: flex;
@@ -148,8 +160,7 @@ footer {
     align-items: center;
   }
   
-  #main-text {
-    font-size: 3.3em;
+  .main-text {
     height: 50%;
     width: 90%;
     display: flex;
@@ -159,24 +170,33 @@ footer {
     gap: 6%;
     text-indent: 5px;
     text-align: center;
+    font-size: .8rem;
   }
 
-  #main-text > p {
-    font-size: 1.1em;
-  }
-  #stats {
+  .stats-container {
     height: 50%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: 4.5em;
   }
 
   .stat {
     text-align: center;
   }
-  
-  footer {
-    font-size: 3.8em;
+
+  .stat > h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: .3em;
+    font-size: 1.4rem;
   }
+  
+  .stat > p {
+      color: hsla(0, 0%, 100%, 0.6);
+      font-size: 0.7rem;
+  }
+
+  .attribution {
+    font-size: .85rem; 
+  }
+  
 }

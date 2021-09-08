@@ -9,13 +9,13 @@ html {
 }
 
 body {
-    font-size: 16px;
+    font-size: 100%;
     font-family: 'Red Hat Display', sans-serif;
-    min-height: 100%;
+    height: 100%;
     background-color: hsl(225, 100%, 94%);
 }
 
-#container {
+.container {
     background-image: url("images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -30,7 +30,7 @@ body {
 }
 
 
-#card-body {
+.card-body {
     display: flex;
     width: 35%; 
     height: 83%;
@@ -49,12 +49,12 @@ strong {
     color: black;
 }
 
-#illustration {
+.illustration {
     width: 100%;
     border-radius: 18px 18px 0px 0px;
 }
 
-#card-text {
+.card-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,11 +65,11 @@ strong {
 
 }
 
-#card-text > p {
+.card-text > p {
     line-height: 25px;
 }
 
-#annual-plan-body {
+.annual-plan-body {
     display: flex;
     background-color: hsl(225, 100%, 98%);
     flex-direction: row;
@@ -80,12 +80,12 @@ strong {
     width: 80%;
 }
 
-#annual-plan-body > * {
+.annual-plan-body > * {
     margin: 20px;
     flex: 1 0 0;
 }
 
-#annual-plan-body > img {
+.annual-plan-body > img {
     flex: 0 0 0;
     margin-right: 0;
 }
@@ -94,19 +94,19 @@ strong {
     width: min-content;
 }
 
-#annual-change {
+.annual-change {
     text-align: end;
     margin-right: 25px;
     color: hsl(245, 75%, 52%);
     font-weight: bold;
 }
 
-#annual-change:hover {
+.annual-change:hover {
     text-decoration: none;
     opacity: 0.6;
 }
 
-#proceed-button {
+.proceed-button {
     width: 80%;
     height: 7%;
     border-radius: 10px;
@@ -119,18 +119,18 @@ strong {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-#proceed-button:hover {
+.proceed-button:hover {
     opacity: 0.6;
 }
 
-#cancel-order {
+.cancel-order {
     margin-bottom: 40px;
     font-weight: bold;
     text-decoration: none;
     color: hsl(224, 23%, 55%);
 }
 
-#cancel-order:hover {
+.cancel-order:hover {
     color: hsl(223, 47%, 23%);
 }
 
@@ -148,7 +148,7 @@ strong {
         font-size: 3.5vw;
     }
 
-     #container{
+     .container{
         width: 100%;
         height: 98vh;
         background-image: url("images/pattern-background-mobile.svg");
@@ -156,17 +156,17 @@ strong {
         background-size: auto;
         }
 
-    #card-body {    
+    .card-body {    
         width: 90%;
         height: 85%;
     }
 
-    #container > * {
+    .container > * {
         margin: 15px;
     }
 
 
-    #annual-plan-body > img {
+    .annual-plan-body > img {
         flex: 0 0 0;
         margin-right: 0;
     }
