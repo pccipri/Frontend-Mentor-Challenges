@@ -54,7 +54,7 @@ body {
   top: -5%;  /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
   transform: translate(-55%, -50%);
-  background: url(images/illustration-woman-online-mobile.svg) no-repeat;
+  background: url("images/illustration-woman-online-mobile.svg") no-repeat;
   background-size: contain;
   z-index: 2;
   width: 80%;
@@ -68,7 +68,7 @@ body {
   top: 25%;  /* position the top  edge of the element at the middle of the parent */
   left: 55%; /* position the left edge of the element at the middle of the parent */
   transform: translate(-55%, -25%);
-  background: url(images/bg-pattern-mobile.svg) no-repeat;
+  background: url("images/bg-pattern-mobile.svg") no-repeat;
   background-size: contain;
   z-index: 1;
   width: 73%;
@@ -184,7 +184,7 @@ footer {
     top: 10%;
     left: -88%;
     transform: translate(80%, 10%);
-    background: url(images/illustration-woman-online-desktop.svg) no-repeat;
+    background: url("images/illustration-woman-online-desktop.svg") no-repeat;
     background-size: contain;
     width: 90%;
     height: 0;
@@ -197,7 +197,7 @@ footer {
     display: block;
     position: absolute;
     transform: translate(-50%, 118%);
-    background: url(images/illustration-box-desktop.svg) no-repeat;
+    background: url("images/illustration-box-desktop.svg") no-repeat;
     background-size: contain;
     width: 15%;
     z-index: 3;
@@ -210,7 +210,7 @@ footer {
   .lower-image { 
     position: absolute;
     transform: translate(-89.5%, -44%);
-    background: url(images/bg-pattern-desktop.svg) no-repeat;
+    background: url("images/bg-pattern-desktop.svg") no-repeat;
     background-size: contain;
     z-index: 1;
     width: 190%;
