@@ -65,7 +65,7 @@ body {
 
 .lower-image {
   position: absolute;
-  top: 25%;  /* position the top  edge of the element at the middle of the parent */
+  top: 20%;  /* position the top  edge of the element at the middle of the parent */
   left: 55%; /* position the left edge of the element at the middle of the parent */
   transform: translate(-55%, -25%);
   background: url("images/bg-pattern-mobile.svg") no-repeat;
