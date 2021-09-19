@@ -83,7 +83,7 @@ body {
   height: 90%;
   flex-direction: column;
   justify-content: space-evenly;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 h1 {
