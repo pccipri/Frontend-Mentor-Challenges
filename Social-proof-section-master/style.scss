@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+@mixin setflex($justify-direction, $align-direction) { /*justify content, align items*/
+    display: flex;
+    justify-content: $justify-direction;
+    align-items: $align-direction;
+}
+
+
+$font-style : 'Spartan', sans-serif;
+$primary-soft-pink : hsl(333, 80%, 67%);
+$primary-very-dark-magenta : hsl(300, 43%, 22%);
+$dark-grayish-magenta : hsl(303, 10%, 53%);
+$light-grayish-magenta : hsl(300, 24%, 96%);
+$white : hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+  font-family: $font-style;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .bg-top-image-desktop {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .bg-bottom-image-desktop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .bg-top-image-mobile {
+    display: none;
+  }
+
+  .bg-bottom-image-mobile {
+    display: none;
+  }
+}
+
+.container {
+  display: grid;
+  height: 75%;
+  width: 85%;
+  margin: auto;
+  grid-auto-columns: 50% 50% 100%;
+  grid-template-rows: 50% 50% 100%;
+}
+
+.number-of-users-container {
+  height: min-content;
+  width: 60%;
+  margin: auto;
+  h1 {
+    color: $primary-very-dark-magenta;
+    font-weight: 700;
+    font-size: 2.6rem;
+  }
+
+  p {
+    color: hsl(300, 11%, 26%);
+    line-height: 1.6rem;
+    margin-top: 3%;
+    font-size: .9rem;
+  }
+
+}
+.reviews-container {
+  @include setflex(space-between, center);
+  margin: auto;
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+
+  .review {
+    background: $light-grayish-magenta;
+    width: 75%;
+    height: 28%;
+    @include setflex(center, center);
+    border-radius: 10px;
+    gap: 2%;
+    p {
+      margin-left: 5%;
+      color: $primary-very-dark-magenta;
+      font-weight: 700;
+      font-size: .9rem;
+      margin-top: 1%;
+    }
+    
+  }
+
+  .reviews {
+    margin-right: 18%;
+  }
+
+  .best-tech {
+    margin-left: 15%;
+  }
+
+}
+
+.users-container {
+  grid-column: 1/3;
+  @include setflex(flex-start, center);
+  gap: 2%;
+  margin-left: 12%;
+
+  .user {
+    width: 28%;
+    height: 80%;
+    background: $primary-very-dark-magenta;
+    border-radius: 10px;
+    color: $white;
+    @include setflex(center, flex-start);
+    flex-direction: column;
+    gap: 10%;
+    overflow: auto;
+
+    .details {
+      display: flex;
+      align-items: center;
+      gap: 10%;
+      margin-left: 10%;
+      font-weight: 400;
+      
+      img {
+        border-radius: 50%;
+        width: 30%;
+      }
+      .person-info-container {
+
+        line-height: 1.5rem;
+
+      p {
+        font-weight: 700;
+      }
+
+      .buyer-status {
+        color: $primary-soft-pink;
+        font-weight: 400;
+      }
+    }
+
+    }
+
+    &>p {
+      font-size: .8rem;
+      width: 80%;
+      line-height: 1.3rem;
+      font-weight: 500;
+      margin-left: 10%;
+        }
+
+  }
+
+  .irenes {
+    margin-top: 2%;
+  }
+
+  .anne {
+    margin-top: 4%;
+  }
+
+}
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+    a {
+    color: hsl(228, 45%, 44%);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1025px) {
+  .container {
+    height: 85%;
+    width: 95%;
+  }
+
+  .number-of-users-container {
+    width: min-content;
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    p {
+      line-height: 1.4rem;
+      font-size: .85rem;
+    }
+  }
+}
+
+@media screen and (max-width: 601px) {
+
+  html {
+    height: 180vh;
+  }
+
+  body {
+    @include setflex(center, center);
+    height: 180vh;
+    .bg-top-image-desktop {
+      display: none;
+    }
+    
+    .bg-bottom-image-desktop {
+      display: none;
+    }
+  
+    .bg-top-image-mobile {
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  
+    .bg-bottom-image-mobile {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  
+  .container {
+    @include setflex(center, center);
+    gap: 3%;
+    height: 140vh;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+  
+  .number-of-users-container {
+    @include setflex(center, center);
+    flex-direction: column;
+    height: min-content;
+    width: 100%;
+    margin: initial;
+    h1 {
+      text-align: center;
+      color: $primary-very-dark-magenta;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  
+    p {
+      text-align: center;
+      color: hsl(300, 11%, 26%);
+      line-height: 1.6rem;
+      margin-top: 3%;
+      font-size: .9rem;
+    }
+  
+  }
+  .reviews-container {
+    @include setflex(space-between, center);
+    margin: initial;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+    gap: 5%;
+  
+    .review {
+      background: $light-grayish-magenta;
+      width: 100%;
+      height: 88%;
+      @include setflex(center, center);
+      flex-direction: column;
+      border-radius: 10px;
+      gap: 2%;
+      p {
+        margin-left: 5%;
+        color: $primary-very-dark-magenta;
+        font-weight: 700;
+        font-size: .9rem;
+        margin-top: 1%;
+      }
+
+    .review-stars {
+      @include setflex(center, center);
+      gap: 8%;
+    }
+
+    }
+
+  .reviews {
+    margin-right: initial;
+  }
+
+  .best-tech {
+    margin-left: initial;
+  }
+  
+  }
+  
+  .users-container {
+    @include setflex(center, center);
+    flex-direction: column;
+    height: 70%;
+    margin-left: 0;
+    gap: 1%;
+  
+    .user {
+      width: 100%;
+      height: 80%;
+      background: $primary-very-dark-magenta;
+      border-radius: 10px;
+      color: $white;
+      @include setflex(center, flex-start);
+      flex-direction: column;
+      gap: 10%;
+      overflow:visible;
+  
+      .details {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        margin-left: 10%;
+        font-weight: 400;
+        
+        img {
+          border-radius: 50%;
+          width: 30%;
+        }
+        .person-info-container {
+  
+          line-height: 1.5rem;
+  
+        p {
+          font-weight: 700;
+        }
+  
+        .buyer-status {
+          color: $primary-soft-pink;
+          font-weight: 400;
+        }
+      }
+  
+      }
+  
+      &>p {
+        font-size: .8rem;
+        width: 80%;
+        line-height: 1.3rem;
+        font-weight: 500;
+        margin-left: 10%;
+          }
+  
+    }
+  
+  }
+
+  footer {
+    width: 70%;
+  .attribution {
+    font-size: .9rem;
+    text-align: center;
+      a {
+      color: hsl(228, 45%, 44%);
+      }
+  }
+}
+}
