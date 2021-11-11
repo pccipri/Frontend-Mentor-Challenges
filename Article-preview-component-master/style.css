@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  font-size: 100%;
+  font-family: 'Manrope', sans-serif;
+  background-color: #ecf2f8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main--container {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  width: 55rem;
+  -ms-grid-columns: 1fr 1.4fr;
+      grid-template-columns: 1fr 1.4fr;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.image--container {
+  background-image: url(/images/drawers.jpg);
+  background-size: cover;
+  border-radius: 15px 0px 0px 15px;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.text--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 1rem .4rem 2rem;
+  font-stretch: condensed;
+}
+
+.text--container p {
+  color: #6d7f97;
+}
+
+.text--container h1 {
+  margin: 0;
+  color: #48556a;
+  font-size: 1.6rem;
+}
+
+.person--container {
+  position: relative;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding: 0rem 1rem 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.person--container .share--container {
+  display: none;
+  position: absolute;
+  right: -5rem;
+  bottom: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18rem;
+  height: 3.8rem;
+  background-color: #48556a;
+  border-radius: 10px;
+}
+
+.person--container .share--container :first-child {
+  margin-right: 1rem;
+}
+
+.person--container .share--container img:first-of-type {
+  border-radius: 2px;
+}
+
+.person--container .share--container img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.person--container .share--container p {
+  color: #9eafc2;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+
+.person--container .share--triangle {
+  display: none;
+  position: absolute;
+  right: 4rem;
+  top: -1.9rem;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #48556a;
+}
+
+.person--container .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.person--container .share--button {
+  margin-left: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  height: 2.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.8rem;
+  border: 0;
+  border-radius: 50%;
+}
+
+.person--container .share--button img {
+  width: 1.4rem;
+  margin-right: 0;
+}
+
+.person--container .share--button:hover {
+  cursor: pointer;
+  background-color: #48556a;
+}
+
+.person--container img {
+  width: 3.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.person--container .person--container--text :first-child {
+  color: #48556a;
+  font-weight: 700;
+}
+
+.person--container .person--container--text * {
+  margin: 0;
+}
+
+.person--container .person--container--text :last-child {
+  color: #9eafc2;
+}
+
+footer {
+  font-size: .8rem;
+  text-align: center;
+}
+
+footer a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 769px) {
+  .main--container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 88vw;
+    height: 35rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .image--container {
+    background-image: url(/images/drawers.jpg);
+    background-size: cover;
+    width: 88vw;
+    height: 15rem;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .text--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70vw;
+    height: 16rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 0 0;
+    font-stretch: condensed;
+  }
+  .text--container p {
+    color: #6d7f97;
+    font-size: .8rem;
+  }
+  .text--container h1 {
+    margin: 0;
+    color: #48556a;
+    font-size: 1rem;
+  }
+  .person--container {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    height: 3rem;
+    padding: 0 0 1rem 0;
+    font-size: .8rem;
+  }
+  .person--container img {
+    width: 2.8rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .person--container .share--container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    background-color: #48556a;
+    border-radius: 0 0 15px 15px;
+  }
+  .person--container .share--triangle {
+    display: none;
+  }
+  .person--container .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .person--container .share--button {
+    background-color: #ecf2f8;
+    position: absolute;
+    margin-left: 3.8rem;
+    bottom: .7rem;
+    right: 1.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    height: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 2rem;
+    border: 0;
+    border-radius: 50%;
+  }
+  .person--container .share--button img {
+    width: 1rem;
+    margin-right: 0;
+    -webkit-filter: brightness(100%) invert(0);
+            filter: brightness(100%) invert(0);
+  }
+  .person--container .person--container--text {
+    width: 8rem;
+  }
+  .person--container .person--container--text :first-child {
+    color: #48556a;
+    font-weight: 700;
+  }
+  .person--container .person--container--text * {
+    margin: 0;
+  }
+  .person--container .person--container--text :last-child {
+    color: #9eafc2;
+  }
+}
+/*# sourceMappingURL=style.css.map */

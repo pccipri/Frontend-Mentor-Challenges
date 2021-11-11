@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+$Very-Dark-Grayish-Blue : hsl(217, 19%, 35%);
+$Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+$Grayish-Blue: hsl(212, 23%, 69%);
+$Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  min-height: 100%;
+  font-size: 100%;
+  font-family: 'Manrope', sans-serif;
+  background-color: $Light-Grayish-Blue;
+  flex-direction: column;
+}
+
+.main--container {
+  display: grid;
+  margin: auto;
+  width: 55rem;
+  grid-template-columns: 1fr 1.4fr;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.image--container {
+  background-image: url(/images/drawers.jpg);
+  background-size: cover;
+  border-radius: 15px 0px 0px 15px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.text--container {  
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem .4rem 2rem;
+  font-stretch: condensed;
+  p {
+    color: $Desaturated-Dark-Blue
+  }
+
+  h1 {
+    margin: 0;
+    color: $Very-Dark-Grayish-Blue;
+    font-size: 1.6rem;
+  }
+}
+
+.person--container {
+  position: relative;
+  grid-column-start: 2;
+  padding: 0rem 1rem 1rem 2rem;
+  display: flex;
+
+  .share--container {
+    display: none;
+    position: absolute;
+    right: -5rem;
+    bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 3.8rem;
+    background-color: $Very-Dark-Grayish-Blue;
+    border-radius: 10px;
+
+    :first-child {
+      margin-right: 1rem;
+    }
+    img:first-of-type{
+      border-radius: 2px;
+    }
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    p {
+      color: $Grayish-Blue;
+      letter-spacing: .3rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .share--triangle {
+    display: none;
+    position: absolute;
+    right: 4rem;
+    top: -1.9rem;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $Very-Dark-Grayish-Blue;
+  }
+
+  .active {
+    display: flex;
+    transition: all 3s ease;
+  }
+  .share--button {
+    margin-left: 10rem;
+    display: flex;
+    padding: 0;
+    img {
+      width: 1.4rem;
+      margin-right: 0;
+    }
+
+    height: 2.8rem;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    border: 0;
+    border-radius: 50%;
+  }
+
+  .share--button:hover {
+    cursor: pointer;
+    background-color: $Very-Dark-Grayish-Blue;
+  }
+
+  img {
+    width: 3.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .person--container--text {
+    :first-child {
+      color: $Very-Dark-Grayish-Blue;
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+    }
+
+    :last-child {
+      color: $Grayish-Blue;
+    }
+  }
+}
+    
+footer {
+  font-size: .8rem;
+  text-align: center; 
+  a {
+    color: hsl(228, 45%, 44%); 
+    }
+  }
+
+@media screen and (max-width: 769px) {
+
+  .main--container {
+    position: relative;
+      display: flex;
+      margin: auto;
+      width: 88vw;
+      height: 35rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  .image--container { 
+      background-image: url(/images/drawers.jpg);
+      background-size: cover;
+      width: 88vw;
+      height: 15rem;
+      border-radius: 15px 15px 0px 0px;
+    }
+    
+  .text--container {  
+      display: flex;
+      width: 70vw;
+      height: 16rem;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 0 0 0;
+      font-stretch: condensed;
+      p {
+        color: $Desaturated-Dark-Blue;
+        font-size: .8rem;
+      }
+    
+      h1 {
+        margin: 0;
+        color: $Very-Dark-Grayish-Blue;
+        font-size: 1rem;
+      }
+    }
+    
+  .person--container {
+    position:static;
+      display: flex;
+      width: 90%;
+      height: 3rem;
+      padding: 0 0 1rem 0;
+      font-size: .8rem;
+      img {
+        width: 2.8rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+      }
+      .share--container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+        width: 100%;
+        background-color: $Very-Dark-Grayish-Blue;
+        border-radius: 0 0 15px 15px;
+      }
+
+      .share--triangle {
+        display: none;
+      }
+
+      .active {
+        display: flex;
+      }
+      .share--button {
+        background-color: $Light-Grayish-Blue;
+        position: absolute;
+        margin-left: 3.8rem;
+        bottom: .7rem;
+        right: 1.8rem;
+        display: flex;
+        padding: 0;
+        img {
+          width: 1rem;
+          margin-right: 0;
+          filter:  brightness(100%) invert(0);
+        }
+        height: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        border: 0;
+        border-radius: 50%;
+      }
+
+      .person--container--text {
+        width: 8rem;
+        :first-child {
+          color: $Very-Dark-Grayish-Blue;
+          font-weight: 700;
+        }
+        * {
+          margin: 0;
+        }
+    
+        :last-child {
+          color: $Grayish-Blue;
+        }
+      }
+    }
+  }

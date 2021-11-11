@@ -25,4 +25,4 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Author
 
-- Frontend Mentor - [@pccipri](https://www.frontendmentor.io/profile/pccipru)
+- Frontend Mentor - [@pccipri](https://www.frontendmentor.io/profile/pccipri)
