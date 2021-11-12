@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-![My project](./screenshot.jpg)
+![My project](./screenshot.JPG)
 
 ### Built with
 
