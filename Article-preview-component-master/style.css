@@ -152,9 +152,13 @@ body {
   cursor: pointer;
 }
 
+.person--container .person--image {
+  border-radius: 50%;
+}
+
 .person--container img {
   width: 3.5rem;
-  border-radius: 50%;
+  border-radius: 0;
   margin-right: 1rem;
 }
 
@@ -241,7 +245,7 @@ footer a {
   }
   .person--container img {
     width: 2.8rem;
-    border-radius: 50%;
+    border-radius: 0;
     margin-right: 1rem;
   }
   .person--container .share--container {

@@ -126,9 +126,12 @@ body {
     cursor: pointer;
   }
 
+  .person--image {
+    border-radius: 50%;
+  }
   img {
     width: 3.5rem;
-    border-radius: 50%;
+    border-radius: 0;
     margin-right: 1rem;
   }
   .person--container--text {
@@ -203,7 +206,7 @@ footer {
       font-size: .8rem;
       img {
         width: 2.8rem;
-        border-radius: 50%;
+        border-radius: 0;
         margin-right: 1rem;
       }
       .share--container {
