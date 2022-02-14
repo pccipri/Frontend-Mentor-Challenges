@@ -16,5 +16,5 @@ This repository is a collection of all my solutions I submitted at [frontendment
 
 ## Other Projects
 
-1. | HTM,CSS,JS| A simple ToDo List | [Live]() | [Code]()
+1. | HTML, CSS, JS| A simple ToDo List | [Live]() | [Code]()
 
