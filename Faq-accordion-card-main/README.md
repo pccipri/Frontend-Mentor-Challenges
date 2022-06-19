@@ -47,7 +47,7 @@ Users should be able to:
 ### Useful resources
 
 - [Container extend as much as the image](https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size) - Helped to make images the right size.
-- [Css Accordion](https://www.youtube.com/watch?v=pzy_QStQaqA&t=811s&ab_channel=dcode) - This helped me learn about the accordion and how to make one.
+- [Css Accordion](https://www.youtube.com/watch?v=pzy_QStQaqA&t=811s&ab_channel=dcode) - This video helped me learn about the accordion and how to make one.
 
 ## Author
 
