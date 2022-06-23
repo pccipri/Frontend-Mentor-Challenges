@@ -13,7 +13,7 @@ This repository is a collection of all my solutions I submitted at [frontendment
 | HTML,CSS(SCSS)      |  Faq accordion card main | [Live](https://pccipri.github.io/Frontend-Mentor-Challenges/Faq-accordion-card-main/) | [Code](https://github.com/pccipri/Frontend-Mentor-Challenges/tree/main/Faq-accordion-card-main) |Free|
 | HTML,CSS(SCSS)      |  Social-proof-section-mastern | [Live](https://pccipri.github.io/Frontend-Mentor-Challenges/Social-proof-section-master/) | [Code](https://github.com/pccipri/Frontend-Mentor-Challenges/tree/main/Social-proof-section-master) |Free|
 | HTML,CSS(SCSS),JS      |  Article-preview-component-master | [Live](https://pccipri.github.io/Frontend-Mentor-Challenges/Article-preview-component-master/) | [Code](https://github.com/pccipri/Frontend-Mentor-Challenges/tree/main/Article-preview-component-master) |Free|
-| HTML,CSS(SCSS),JS      |  Ping-coming-soon-page-master | [Live](https://github.com/pccipri/Frontend-Mentor-Challenges/tree/main/Ping-coming-soon-page-master) | [Code](https://github.com/pccipri/Frontend-Mentor-Challenges/tree/main/Ping-coming-soon-page-master) |Free|
+| HTML,CSS(SCSS),JS      |  Ping-coming-soon-page-master | [Live](https://pccipri.github.io/Frontend-Mentor-Challenges/Ping-coming-soon-page-master) | [Code](https://github.com/pccipri/Frontend-Mentor-Challenges/tree/main/Ping-coming-soon-page-master) |Free|
 
 ## Other Projects
 
