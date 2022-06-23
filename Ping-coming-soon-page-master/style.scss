@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+$primary-font : 'Libre Franklin', sans-serif;
+
+$primary-color-blue: hsl(223, 87%, 63%);
+$secondary-color-pale-blue: hsl(223, 100%, 88%);
+$secondary-color-light-red: hsl(354, 100%, 66%);
+$neutral-color-gray: hsl(0, 0%, 59%);
+$neutral-color-very-dark-blue: hsl(209, 33%, 12%);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: $primary-font;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .main-text {
+        text-align: center;
+        font-weight: 300;
+
+        * {
+            margin: 1rem;
+        }
+
+        p:first-child {
+            color: $neutral-color-gray;
+            font-size: 2.8rem;
+        }
+
+        span {
+            color: $neutral-color-very-dark-blue;
+            font-weight: 700;
+        }
+    
+
+        p {
+            color: black;
+            font-size: 1.3rem;
+        }
+
+    }
+
+    .email-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        padding-left: 10%;
+
+        * {
+            border-radius: 25px;
+            font-family: $primary-font;
+        }
+
+        .input-container {
+            margin: .7rem 0 0 0;
+        }
+
+        .email-input {
+            height: 5vh;
+            width: 23vw;
+            margin-right: 4px;
+            border: 1px solid hsl(227, 51%, 93%);
+            padding-left: 1rem;
+        }
+
+        .email-input::placeholder {
+            color: $secondary-color-pale-blue;
+        }
+
+        .email-button {
+            height: 5vh;
+            width: 8.5vw;
+            border: none;
+            background-color: $primary-color-blue;
+            color: white;
+            font-weight: 600;
+            margin-left: 4px;
+        }
+
+        .email-button:hover {
+            cursor: pointer;
+            opacity: 0.9;
+        }
+
+        .error-message {
+            color: $secondary-color-light-red;
+            display: none;
+            font-size: .9rem;
+            margin: 0;
+            justify-self: start;
+            padding-left: 1rem;
+        }
+    }
+    .main-image {
+        width: 35%;
+    }
+
+    .social-copyright {
+        * {
+            margin: 0 5px;
+        }
+    }
+
+    .text-copyright {
+        color: $neutral-color-gray;
+    }
+
+    .fa-brands {
+        padding: 10px;
+        text-align: center;
+        width: 2.3rem;
+        border: 1px solid rgba(139, 136, 136, 0.705);
+        color: $primary-color-blue;
+        border-radius: 50%;
+    }
+    
+    .fa-brands:hover {
+        background-color: $primary-color-blue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+footer {
+    text-align: center;
+}
+
+.attribution {
+    text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media only screen and (max-width: 767px) { // for mobile
+
+    body {
+
+        .main-text {
+    
+            p:first-child {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+    
+        }
+
+        .main-image {
+            width: 85%;
+        }
+
+        .email-form {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr 8% 1fr;
+            padding-left: 0;
+    
+            * {
+                border-radius: 25px;
+                font-family: $primary-font;
+            }
+    
+            .input-container {
+                margin: .7rem 0 0 0;
+            }
+    
+            .email-input {
+                height: 6vh;
+                width: 70vw;
+                border: 1px solid hsl(227, 51%, 93%);
+                margin: 0;
+                align-self: end;
+            }
+    
+            .email-input::placeholder {
+                color: $secondary-color-pale-blue;
+            }
+    
+            .email-button {
+                height: 6vh;
+                width: 70vw;
+                border: none;
+                background-color: $primary-color-blue;
+                color: white;
+                font-weight: 600;
+                margin-left: inherit;
+                grid-row-start: 3;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+    
+            .email-button:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
+    
+            .error-message {
+                color: $secondary-color-light-red;
+                margin-top: 0rem;
+                width: auto;
+                font-size: .8rem;
+                margin: 1% 0 0 0;
+                justify-self: center;
+                padding-left: 1rem;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { // tablets && 1080p
+    body {
+        .main-text {
+    
+            p:first-child {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            * {
+                margin: 1rem 0 0 0;
+            }
+        }
+
+        
+
+        .email-form {
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr;
+
+            .email-input {
+                height: 5vh;
+                width: 35vw;
+                margin-right: 4px;
+                border: 1px solid hsl(227, 51%, 93%);
+                padding-left: 1rem;
+            }
+            
+            .email-button {
+                height: 5vh;
+                width: 15.5vw;
+                border: none;
+                background-color: $primary-color-blue;
+                color: white;
+                font-weight: 600;
+                margin-left: 4px;
+            }
+            
+            .error-message {
+                color: $secondary-color-light-red;
+                width: auto;
+                font-size: .8rem;
+                margin: 1% 0 0 0;
+                padding-left: 1rem;
+            }
+        }
+
+        .main-image {
+            width: 65%;
+        }
+    }
+}
+  

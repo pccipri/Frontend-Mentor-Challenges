@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body .main-text {
+  text-align: center;
+  font-weight: 300;
+}
+body .main-text * {
+  margin: 1rem;
+}
+body .main-text p:first-child {
+  color: hsl(0deg, 0%, 59%);
+  font-size: 2.8rem;
+}
+body .main-text span {
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 700;
+}
+body .main-text p {
+  color: black;
+  font-size: 1.3rem;
+}
+body .email-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 10%;
+}
+body .email-form * {
+  border-radius: 25px;
+  font-family: "Libre Franklin", sans-serif;
+}
+body .email-form .input-container {
+  margin: 0.7rem 0 0 0;
+}
+body .email-form .email-input {
+  height: 5vh;
+  width: 23vw;
+  margin-right: 4px;
+  border: 1px solid hsl(227deg, 51%, 93%);
+  padding-left: 1rem;
+}
+body .email-form .email-input::-moz-placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+body .email-form .email-input:-ms-input-placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+body .email-form .email-input::placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+body .email-form .email-button {
+  height: 5vh;
+  width: 8.5vw;
+  border: none;
+  background-color: hsl(223deg, 87%, 63%);
+  color: white;
+  font-weight: 600;
+  margin-left: 4px;
+}
+body .email-form .email-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+body .email-form .error-message {
+  color: hsl(354deg, 100%, 66%);
+  display: none;
+  font-size: 0.9rem;
+  margin: 0;
+  justify-self: start;
+  padding-left: 1rem;
+}
+body .main-image {
+  width: 35%;
+}
+body .social-copyright * {
+  margin: 0 5px;
+}
+body .text-copyright {
+  color: hsl(0deg, 0%, 59%);
+}
+body .fa-brands {
+  padding: 10px;
+  text-align: center;
+  width: 2.3rem;
+  border: 1px solid rgba(139, 136, 136, 0.705);
+  color: hsl(223deg, 87%, 63%);
+  border-radius: 50%;
+}
+body .fa-brands:hover {
+  background-color: hsl(223deg, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media only screen and (max-width: 767px) {
+  body .main-text p:first-child {
+    font-size: 2rem;
+  }
+  body .main-text p {
+    font-size: 1rem;
+  }
+  body .main-image {
+    width: 85%;
+  }
+  body .email-form {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8% 1fr;
+    padding-left: 0;
+  }
+  body .email-form * {
+    border-radius: 25px;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  body .email-form .input-container {
+    margin: 0.7rem 0 0 0;
+  }
+  body .email-form .email-input {
+    height: 6vh;
+    width: 70vw;
+    border: 1px solid hsl(227deg, 51%, 93%);
+    margin: 0;
+    align-self: end;
+  }
+  body .email-form .email-input::-moz-placeholder {
+    color: hsl(223deg, 100%, 88%);
+  }
+  body .email-form .email-input:-ms-input-placeholder {
+    color: hsl(223deg, 100%, 88%);
+  }
+  body .email-form .email-input::placeholder {
+    color: hsl(223deg, 100%, 88%);
+  }
+  body .email-form .email-button {
+    height: 6vh;
+    width: 70vw;
+    border: none;
+    background-color: hsl(223deg, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    margin-left: inherit;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  body .email-form .email-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  body .email-form .error-message {
+    color: hsl(354deg, 100%, 66%);
+    margin-top: 0rem;
+    width: auto;
+    font-size: 0.8rem;
+    margin: 1% 0 0 0;
+    justify-self: center;
+    padding-left: 1rem;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body .main-text p:first-child {
+    font-size: 2.2rem;
+  }
+  body .main-text p {
+    font-size: 1rem;
+  }
+  body .main-text * {
+    margin: 1rem 0 0 0;
+  }
+  body .email-form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  body .email-form .email-input {
+    height: 5vh;
+    width: 35vw;
+    margin-right: 4px;
+    border: 1px solid hsl(227deg, 51%, 93%);
+    padding-left: 1rem;
+  }
+  body .email-form .email-button {
+    height: 5vh;
+    width: 15.5vw;
+    border: none;
+    background-color: hsl(223deg, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+  body .email-form .error-message {
+    color: hsl(354deg, 100%, 66%);
+    width: auto;
+    font-size: 0.8rem;
+    margin: 1% 0 0 0;
+    padding-left: 1rem;
+  }
+  body .main-image {
+    width: 65%;
+  }
+}/*# sourceMappingURL=style.css.map */
