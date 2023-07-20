@@ -91,6 +91,9 @@ function toggleButtons(evt) {
     tipContainer.forEach((element) => {
       element.classList.remove("active");
     });
+    tipPercentage = Number(inputTip.value);
+    calculateNewTip();
+    
   }
 }
 /**
@@ -136,7 +139,7 @@ function verifyValuesToCalculateTip() {
 }
 
 /**
- * This function calculates the tip per person and the total per person 
+ * This function calculates the tip per person and the total per person
  * if the needed values are valid
  */
 function calculateNewTip() {
